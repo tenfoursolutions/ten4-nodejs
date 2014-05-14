@@ -1,0 +1,2 @@
+host github.com
+  IdentityFile /root/.ssh/ten4_github_id

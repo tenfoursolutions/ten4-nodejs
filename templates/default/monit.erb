@@ -1,0 +1,8 @@
+#!/usr/bin/monit
+check process nodejs with pidfile /var/run/<%= node['ten4-nodejs']['app'] %>.pid
+  start program = "/etc/init.d/<%= node['ten4-nodejs']['app'] %> start"
+  stop program  = "/etc/init.d/<%= node['ten4-nodejs']['app'] %> stop"
+  if failed port <%= node['ten4-nodejs']['port'] %> protocol HTTP
+  request /status
+  with timeout 3 seconds
+  then restart

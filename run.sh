@@ -1,1 +1,0 @@
-chef-solo -o "nodejs"
