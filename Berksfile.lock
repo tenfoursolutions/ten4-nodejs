@@ -38,6 +38,7 @@ GRAPH
   ten4-nodejs (0.1.0)
     nginx (>= 0.0.0)
     nodejs (>= 0.0.0)
+    ssh_known_hosts (>= 0.0.0)
   yum (3.2.0)
   yum-epel (0.3.6)
     yum (~> 3.0)
