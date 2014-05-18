@@ -73,3 +73,7 @@ template "/etc/monit/conf.d/#{node['ten4-nodejs']['app']}" do
   action :create
   mode 0700
 end
+
+service "monit" do
+  action :start
+end
